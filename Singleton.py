@@ -1,3 +1,5 @@
+# 使用类方法实现单例
+
 class Solution:
     # @return: The same instance of this class every time
     _m_Solution = None
