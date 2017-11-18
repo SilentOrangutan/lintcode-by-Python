@@ -1,4 +1,6 @@
 #encoding:utf-8
+#Refer:    http://blog.csdn.net/zhangxiangdavaid/article/details/37115355?reload
+
 """
 Definition of TreeNode:
 class TreeNode:
@@ -40,7 +42,7 @@ class Solution:
             while root is not None:
                 p.append(root)
                 root = root.left
-            root = p.pop(-1)
+            root = p.pop()
             res.append(root.val)
             root=root.right
         return res

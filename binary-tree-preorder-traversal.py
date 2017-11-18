@@ -8,6 +8,7 @@
 -------------------------------------------------
    Change Activity:
                    2017/11/18:
+    Refer:    http://blog.csdn.net/zhangxiangdavaid/article/details/37115355?reload
 -------------------------------------------------
 """
 """
@@ -51,6 +52,6 @@ class Solution:
                 p.append(root)
                 res.append(root)
                 root=root.left
-            root=p.pop(-1)
+            root=p.pop()
             root=root.right
         return res
