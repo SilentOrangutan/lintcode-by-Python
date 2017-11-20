@@ -62,10 +62,11 @@ class Solution:
             while cp < curQueSize:
                 temp=Queue.pop(0)
                 cp+=1
+                if temp.left is None and temp.right is None:
+                    return depth
                 if temp.left:
                     Queue.append(temp.left)
                 if temp.right:
                     Queue.append(temp.right)
-                if temp.left is None and temp.right is None:
-                    return depth
+
 
